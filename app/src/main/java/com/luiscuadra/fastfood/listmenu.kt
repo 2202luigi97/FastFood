@@ -25,14 +25,14 @@ class listmenu : AppCompatActivity() {
             Menu(
                 "Hamburguesa de Pollo",
                 "C$150",
-                "https://img2.freepng.es/20180605/ljs/kisspng-hamburger-chicken-nugget-whopper-crispy-fried-chic-chiken-burger-5b1687e6b7b1d6.6667528315282032387524.jpg"
+                "https://rapidogs.com/wp-content/uploads/2021/03/hamburguesa-pollo.png"
             )
         )
         menus.add(
             Menu(
                 "Hamburguesa Mixta",
                 "C$200",
-                "https://img2.freepng.es/20180328/vlq/kisspng-cheeseburger-bacon-hamburger-wrap-hot-dog-bacon-5abba6a0b0b5c8.9053149315222473287238.jpg"
+                "https://solrestaurants.info/wp-content/uploads/2022/12/burger-2_0003_5_0003_28.jpg"
             )
         )
         val adaptador = MyAdapter(listmenu@ this, menus)

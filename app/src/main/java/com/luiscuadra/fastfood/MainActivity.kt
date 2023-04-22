@@ -35,5 +35,10 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
 
     }
+    fun Pizza(view: View) {
+        val intent = Intent(this, listpizza::class.java)
+        startActivity(intent)
+
+    }
 
 }

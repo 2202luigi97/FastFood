@@ -9,7 +9,9 @@
     <ScrollView
         android:id="@+id/Scroll"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,15 +50,15 @@
                     android:text="Descripcion"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp" />
+                    android:textSize="34sp" />
 
                 <Button
                     android:id="@+id/btncerrar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/teal_700"
-                    android:onClick="finalizar"
-                    android:text="Cerrar" />
+                    android:text="Agregar"
+                    android:textColor="@color/design_default_color_background" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

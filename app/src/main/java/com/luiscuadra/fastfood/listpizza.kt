@@ -3,41 +3,39 @@ package com.luiscuadra.fastfood
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import com.luiscuadra.fastfood.databinding.ActivityListmenuBinding
-import com.luiscuadra.fastfood.databinding.ActivityListpolloBinding
+import com.luiscuadra.fastfood.databinding.ActivityListpizzaBinding
 
-class listpollo : AppCompatActivity() {
+class listpizza : AppCompatActivity() {
 
     var menus: ArrayList<Menu> = ArrayList()
-    lateinit var binding: ActivityListpolloBinding
+    lateinit var binding: ActivityListpizzaBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityListpolloBinding.inflate(layoutInflater)
+        binding=ActivityListpizzaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         menus.add(
             Menu(
-                "Pierna de Pollo",
-                "C$70", "https://thumbs.dreamstime.com/b/patas-de-pollo-fritas-crujientes-y-sin-aliento-aisladas-en-fondo-blanco-185063345.jpg"
+                "Pizza Pepperoni",
+                "C$30", "https://www.pngall.com/wp-content/uploads/4/Pepperoni-Dominos-Pizza-PNG-Picture.png"
             )
         )
         menus.add(
             Menu(
-                "Pechuga de Pollo",
-                "C$90",
-                "https://thumbs.dreamstime.com/b/pechuga-de-pollo-frita-en-el-fondo-blanco-41891692.jpg"
+                "Pizza de Jamon",
+                "C$30",
+                "https://valentispizza.net/wp-content/uploads/2017/04/jamon-salami.jpg"
             )
         )
         menus.add(
             Menu(
-                "Alitas de Pollo",
+                "Pizza Hawaiana",
                 "C$120",
-                "https://www.pngmart.com/files/12/Fried-Chicken-Wings-PNG-Transparent.png"
+                "https://ilpappardelle.files.wordpress.com/2013/05/a846f-especialidades_hawaiana.png"
             )
         )
-        val adaptador = MyAdapter(listpollo@ this, menus)
+        val adaptador = MyAdapter(listpizza@ this, menus)
         binding.ListaMenu.adapter = adaptador
 
         //Click a cada elemento del ListView
@@ -51,10 +49,5 @@ class listpollo : AppCompatActivity() {
             }
             startActivity(intent)
         }
-        fun Volver(view: View) {
-            finish()
-        }
-
-
     }
 }

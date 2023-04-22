@@ -23,8 +23,5 @@ class menudetalle : AppCompatActivity() {
         binding.txtdesc.text = precio
         Picasso.get().load(foto).into(binding.imgfondo);
     }
-    fun finalizar(view: View){
-        finish()
-    }
 
 }

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.FastFood"
         tools:targetApi="31">
         <activity
+            android:name=".listpizza"
+            android:exported="false" />
+        <activity
             android:name=".listgaceosa"
             android:exported="false" />
         <activity

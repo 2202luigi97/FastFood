@@ -20,23 +20,32 @@ class listgaceosa : AppCompatActivity() {
             Menu(
                 "Coca Cola",
                 "C$30",
-                "https://w7.pngwing.com/pngs/897/836/png-transparent-coca-cola-600-fizzy-drinks-diet-coke-fanta-gaseosas-cola-beverages-soft-drink.png"
+                "https://admin.consumo.com.co/backend/admin/backend/web/archivosDelCliente/items/images/20210208121219-Bebidas-Gaseosas-y-Maltas-GASEOSA-COCA-COLA-X-600-ML-5939202102081212197120.png"
             )
         )
         menus.add(
             Menu(
                 "Fresco de Naranja",
                 "C$20",
-                "https://img.freepik.com/vector-premium/botella-jugo-naranja-realista-pajita-tapa-sobre-fondo-transparente_208581-858.jpg"
+                "https://www.pnguniverse.com/wp-content/uploads/2020/10/Jugo-de-naranja.png"
             )
         )
         menus.add(
             Menu(
                 "Gatorade",
                 "C$40",
-                "https://img2.freepng.es/20190331/oxz/kisspng-sports-energy-drinks-the-gatorade-company-portab-gatorade-transparent-amp-png-clipart-free-downlo-5ca161009b0029.8740095615540800006349.jpg"
+                "https://images.squarespace-cdn.com/content/v1/54e22d6be4b00617871820ca/1594743773195-1LHT4ME1I635H18TLGS3/28oz+Fruit+Punchq.png?format=500w"
             )
         )
+
+        menus.add(
+            Menu(
+                "Gatorade",
+                "C$40",
+                "https://images.squarespace-cdn.com/content/v1/54e22d6be4b00617871820ca/1594743773195-1LHT4ME1I635H18TLGS3/28oz+Fruit+Punchq.png?format=500w"
+            )
+        )
+
         val adaptador = MyAdapter(listgaceosa@ this, menus)
         binding.ListaMenu.adapter = adaptador
 
